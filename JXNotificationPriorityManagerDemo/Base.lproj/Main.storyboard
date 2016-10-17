@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sud-Mo-6ur">
+                                <state key="normal" title="注册TaskOne 优化级：Normal"/>
+                                <connections>
+                                    <action selector="registerTaskOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4GH-9j-kMN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mEW-ne-9qx">
+                                <state key="normal" title="注册TaskTwo 优化级：VeryHigh"/>
+                                <connections>
+                                    <action selector="registerTaskTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="exo-xQ-e2v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7W-Wu-aUV">
+                                <state key="normal" title="注册TaskThree 优化级：Low"/>
+                                <connections>
+                                    <action selector="registerTaskThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZj-kR-Och"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0g-x2-dIS">
+                                <state key="normal" title="发出通知：XXXNotification"/>
+                                <connections>
+                                    <action selector="postNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A0G-04-S0x"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7pN-iF-EJe">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sud-Mo-6ur" firstAttribute="trailing" secondItem="mEW-ne-9qx" secondAttribute="trailing" id="BRV-Rp-QLS"/>
+                            <constraint firstItem="mEW-ne-9qx" firstAttribute="top" secondItem="sud-Mo-6ur" secondAttribute="bottom" constant="8" symbolic="YES" id="GB0-Wx-lQ4"/>
+                            <constraint firstItem="7pN-iF-EJe" firstAttribute="top" secondItem="T0g-x2-dIS" secondAttribute="bottom" constant="8" symbolic="YES" id="SUI-uN-1F7"/>
+                            <constraint firstItem="T0g-x2-dIS" firstAttribute="top" secondItem="t7W-Wu-aUV" secondAttribute="bottom" constant="35" id="UqH-Aq-Bxl"/>
+                            <constraint firstItem="sud-Mo-6ur" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="X2y-tI-14E"/>
+                            <constraint firstItem="T0g-x2-dIS" firstAttribute="trailing" secondItem="7pN-iF-EJe" secondAttribute="trailing" id="b3m-Vc-qc3"/>
+                            <constraint firstItem="sud-Mo-6ur" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dlu-hr-WnV"/>
+                            <constraint firstItem="sud-Mo-6ur" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eax-c7-cNo"/>
+                            <constraint firstItem="mEW-ne-9qx" firstAttribute="leading" secondItem="t7W-Wu-aUV" secondAttribute="leading" id="fnc-dz-Asr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7pN-iF-EJe" secondAttribute="bottom" constant="238" id="hVa-xW-Q36"/>
+                            <constraint firstItem="mEW-ne-9qx" firstAttribute="trailing" secondItem="t7W-Wu-aUV" secondAttribute="trailing" id="iMp-aD-c59"/>
+                            <constraint firstItem="t7W-Wu-aUV" firstAttribute="trailing" secondItem="T0g-x2-dIS" secondAttribute="trailing" id="lY2-pq-MEc"/>
+                            <constraint firstItem="sud-Mo-6ur" firstAttribute="leading" secondItem="mEW-ne-9qx" secondAttribute="leading" id="pNk-UH-KG8"/>
+                            <constraint firstItem="t7W-Wu-aUV" firstAttribute="leading" secondItem="T0g-x2-dIS" secondAttribute="leading" id="sW8-uD-GKb"/>
+                            <constraint firstItem="t7W-Wu-aUV" firstAttribute="top" secondItem="mEW-ne-9qx" secondAttribute="bottom" constant="8" symbolic="YES" id="v49-k8-OX5"/>
+                            <constraint firstItem="T0g-x2-dIS" firstAttribute="leading" secondItem="7pN-iF-EJe" secondAttribute="leading" id="y7f-UD-eIs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="7pN-iF-EJe" id="Etj-7c-Toz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151.875" y="106.69014084507042"/>
+        </scene>
+    </scenes>
+</document>
